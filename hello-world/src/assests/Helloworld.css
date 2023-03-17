@@ -1,0 +1,29 @@
+.hello-div {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+h1 {
+    font-size: 72px;
+        background: -webkit-linear-gradient(#98a4ca, #4b0f0f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+/* another ways of centering a div
+
+.hello-div {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+} 
+
+.hello-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+} */

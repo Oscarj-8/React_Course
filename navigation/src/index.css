@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navs ul {
+ list-style-type: none;
+ display: flex;
+ gap: 2em;
+ justify-content: center;
+  cursor: pointer;
+}
+
+.navs {
+  background-color: rgb(51, 51, 48);
+  color: white;
+  font-size: large;
+  padding: 1em;
+}
+ 

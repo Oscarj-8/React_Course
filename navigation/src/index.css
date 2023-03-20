@@ -12,18 +12,47 @@ code {
     monospace;
 }
 
-.navs ul {
+.navs{
  list-style-type: none;
  display: flex;
  gap: 2em;
  justify-content: center;
-  cursor: pointer;
+cursor: pointer;
+  background-color: rgb(51, 51, 48);
+    color: white;
+    font-size: large;
+    padding: 1em;
+} 
+
+.nav-item {
+  text-decoration: none;
+  color: white;
 }
 
-.navs {
-  background-color: rgb(51, 51, 48);
-  color: white;
-  font-size: large;
-  padding: 1em;
+.nav-item:hover {
+ text-decoration: underline;
 }
- 
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  color: #4b4747;
+}
+
+.card h1 {
+  font-size: 3em;
+ color: #302e2e;
+}
+
+.card p {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-bottom: 4em;
+}
+
+.abtme p {
+  width: 70%;
+}

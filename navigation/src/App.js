@@ -2,22 +2,23 @@ import logo from "./logo.svg";
 import "./App.css";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="wrapper">
-      <div className="navs">
-        <ul>
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>AboutMe</a>
-          </li>
-        </ul>
-      </div>
-      <Home />
-      <AboutMe />
+      <nav className="navs">
+        <Link to="/" className="nav-item">
+          Home
+        </Link>
+        <Link to="/about-me" className="nav-item">
+          AboutMe
+        </Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-me" element={<AboutMe />} />
+      </Routes>
     </div>
   );
 }

@@ -8,7 +8,7 @@ function Page3() {
       <h1>Hey this is page three</h1>
       <p>
         <i>
-          In this page, the image is added by declaring a variable and assign
+          In this page, the image is added by declaring a variable and assigning
           the link of the picture from google and embedding that variable in the
           image JSX element inside the 'src' attribute. No need of imporing the
           path and use of 'reuired()' function aswell.

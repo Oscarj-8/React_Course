@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('./assets/choco.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper {
+ position: absolute;
+ top: 50%;
+ left: 20%;
+ transform: translate(-20%, -50%);
+}
+
+.lists{
+  width: 50%;
+  list-style: none;
+  padding: 10px 15px;
+  border: 1px solid #383737;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 6px black;
+}
+ h1 {
+  color: #292727;
+ }

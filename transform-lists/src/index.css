@@ -31,6 +31,7 @@ code {
   margin: 20px;
   border-radius: 5px;
   box-shadow: 2px 4px 6px black;
+  cursor: pointer;
 }
 
  h1 {
@@ -38,7 +39,6 @@ code {
  }
 
  .lists:hover{
- 
   border-left: 20px solid rgb(255, 255, 255);
   border-right: 20px solid rgb(255, 255, 255);
   background-color: #292727;

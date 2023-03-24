@@ -4,25 +4,29 @@ import { useState } from "react";
 function App() {
   const [name, setName] = useState("");
 
-  const handler = (e) => {
+  const submitHandler = (e) => {
     e.preventDefault();
-    console.log("submitted");
     setName("");
+    console.log(name);
   };
+
   return (
-    <div className="container">
-      <form className="form" onSubmit={handler}>
+    <div>
+      <form onSubmit={submitHandler}>
         <fieldset className="wrapper">
-          <legend>Add username</legend>
-          <label>Username:</label>
+          <h2>Add Username</h2>
+          <label htmlFor="name">Username:</label>
           <input
             type="text"
-            placeholder="username"
+            id="name"
             name="username"
+            placeholder="username"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <button type="submit">Login</button>
+          <button disabled={!name} type="Submit">
+            Submit
+          </button>
         </fieldset>
       </form>
     </div>

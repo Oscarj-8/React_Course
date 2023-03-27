@@ -6,12 +6,18 @@ function App() {
 
   const handler = (e) => {
     e.preventDefault();
-    console.log("handler");
+    if (score <= 5 && comment.length <= 10) {
+      alert("Please tell us whats wrong with our service and Thank you!");
+    }
+
+    console.log(`Feedback submitted, ${score} ${comment}`);
+    setScore("10");
+    setComment("");
   };
 
   return (
     <div className="container">
-      <form onSubmit={handler}>
+      <form onSubmit={handler} className="form">
         <fieldset>
           <h1>Feedback Form</h1>
           <div className="field">
@@ -30,8 +36,8 @@ function App() {
               value={comment}
               onChange={(e) => setComment(e.target.value)}
             />
+            <input className="btn" type="submit" />
           </div>
-          <input type="submit" />
         </fieldset>
       </form>
     </div>
